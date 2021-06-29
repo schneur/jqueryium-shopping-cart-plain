@@ -30,7 +30,7 @@ $(document).ready(function () {
     clearTimeout(timeout);
     timeout = setTimeout(function () {
       updateCosts();
-    }, 535);
+    }, 550);
   }); 
 
   $('#addStock').on('submit', function (event) {
@@ -44,7 +44,7 @@ $(document).ready(function () {
       '<td class="price">' + price + '</td>' +
       '<td class="quantity"><input type="number" value="' + quantity + '" /></td>' +
       '<td class="subTotalPrice"></td>' +
-      '<td><button class="btn btn-light btn-sm remove">remove</button></td>' +
+      '<td><button class="btn btn-warning btn-sm remove">remove</button></td>' +
     '</tr>');
 
     updateCosts();
