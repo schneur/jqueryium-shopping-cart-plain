@@ -40,13 +40,18 @@ $(document).ready(function () {
     var quantity = $(this).children('.quantity').val();
   
     $('tbody').append('<tr>' +
-      '<td class="name">' + name + '</td>' +
+      '<td class="itemName">' + name + '</td>' +
       '<td class="price">' + price + '</td>' +
       '<td class="quantity"><input type="number" value="' + quantity + '" /></td>' +
       '<td class="subTotalPrice"></td>' +
       '<td><button class="btn btn-light btn-sm remove">remove</button></td>' +
     '</tr>');
+
     updateCosts();
+    
+    $(this).children('.itemName').val('');
+    $(this).children('.price').val('');
+    $(this).children('.quantity').val('');
   });
 });   
 
