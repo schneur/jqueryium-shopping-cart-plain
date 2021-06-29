@@ -1,6 +1,7 @@
-* {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-};
+h1 {
+  position: relative;
+  font-family:cursive;
+}
 
 img {
   position: absolute;
